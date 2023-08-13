@@ -1,0 +1,33 @@
+{
+  "name": "mgc",
+  "version": "1.0.0",
+  "description": "A cli based tool for generating your saved modules",
+  "author": "Admond Tamang",
+  "license": "MIT",
+  "main": "bin/generate",
+  "bin": {
+    "cli": "bin/generate.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cli",
+    "build-tools",
+    "module generate cli"
+  ],
+  "engines": {
+    "node": ">=10.x",
+    "npm": ">= 6.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "openai": "^3.3.0"
+  }
+}

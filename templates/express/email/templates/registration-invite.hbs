@@ -1,0 +1,60 @@
+<html lang='en'>
+
+  <head>
+    <title>Register Your Account</title>
+
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <style>
+      .body { padding-bottom: 82px; font-size: 16px; background-color: rgba(0, 0, 0, 0.04); font-family: Arial,
+      sans-serif } .header { background-color: #042940; padding: 23px 48px; border-radius: 16px 16px 0px 0px; } .main {
+      max-width: 635px; margin: 0 auto; padding: 68px 0 51px 0; color: rgba(0, 0, 0, 0.74); line-height: 140%;
+      letter-spacing: 0.16px; border-radius: 16px; } .content { background-color: #fff; padding: 51px 48px 87px 48px;
+      border-radius: 0px 0px 16px 16px; } .content-main { margin: 24px 0 68px 0; } .content-main p { margin: 20px 0 0 0;
+      } .content-main p:first { margin: 0; } .mfa-code { color: #000; font-style: normal; font-weight: 500; } .greeting
+      { color: #321D36; font-style: normal; font-weight: 500; } .copyright { color: rgba(17, 18, 24, 0.54); text-align:
+      center; font-size: 13px; font-family: Inter; line-height: 130%; } .salutation { font-family: Verdana, Geneva,
+      sans-serif; } .action-link { font-size: 14px; font-weight: 500; color: #004C95; line-height: 140%; letter-spacing:
+      0.42px; text-decoration: none; } .sub-text { color: rgba(0, 0, 0, 0.54); font-size: 14px; }
+    </style>
+  </head>
+
+  <body>
+    <div class='body'>
+      <div class='main'>
+        <div class='header'>
+          <img src='https://axp-data-dev.s3.us-east-2.amazonaws.com/public-assets/logo.png' alt='AXP Logo' />
+        </div>
+
+        <div class='content'>
+          <p class='greeting salutation'>Hello,</p>
+
+          <div class='content-main'>
+            <p>Thank you for choosing AX Partner as your trusted platform for [specific purpose]. We are excited to have
+              you join our community of.</p>
+
+            <p>To complete your registration and gain access to our exclusive features and resources, please click on
+              the following link:
+            </p>
+            <p><a href='{{inviteLink}}' class='action-link'>{{inviteLink}}</a></p>
+            <div class='sub-text'>* This link is valid for a week</div>
+
+            <p>By clicking the link, you will be directed to a secure registration page where you can set up your
+              account and provide the necessary information.</p>
+
+          </div>
+
+          <p>
+            <div class='greeting'>Regards,</div>
+            AX Partners Digital Technology Team
+          </p>
+
+        </div>
+      </div>
+
+      <div class='copyright'>© AX Partner Corporation 2023</div>
+    </div>
+  </body>
+
+</html>

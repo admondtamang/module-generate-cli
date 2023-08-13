@@ -1,0 +1,64 @@
+<html lang='en'>
+
+  <head>
+    <title>Multi Factor Authentication Code</title>
+
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <style>
+      .body { padding-bottom: 82px; font-size: 16px; background-color: rgba(0, 0, 0, 0.04); font-family: Arial,
+      sans-serif } .header { background-color: #042940; padding: 23px 48px; border-radius: 16px 16px 0px 0px; } .main {
+      max-width: 635px; margin: 0 auto; padding: 68px 0 51px 0; color: rgba(0, 0, 0, 0.74); line-height: 140%;
+      letter-spacing: 0.16px; border-radius: 16px; } .content { background-color: #fff; padding: 51px 48px 87px 48px;
+      border-radius: 0px 0px 16px 16px; } .content-main { margin: 24px 0 68px 0; } .content-main p { margin: 20px 0 0 0;
+      } .content-main p:first { margin: 0; } .mfa-code { color: #000; font-style: normal; font-weight: 500; } .greeting
+      { color: #321D36; font-style: normal; font-weight: 500; } .copyright { color: rgba(17, 18, 24, 0.54); text-align:
+      center; font-size: 13px; font-family: Inter; line-height: 130%; } .salutation { font-family: Verdana, Geneva,
+      sans-serif; }
+    </style>
+  </head>
+
+  <body>
+    <div class='body'>
+      <div class='main'>
+        <div class='header'>
+          <img src='https://axp-data-dev.s3.us-east-2.amazonaws.com/public-assets/logo.png' alt='AXP Logo' />
+        </div>
+
+        <div class='content'>
+          <p class='greeting salutation'>Dear {{firstName}},</p>
+
+          <div class='content-main'>
+            <p>To enhance the security of your AX Partner account, we have implemented Multi-Factor Authentication
+              (MFA). As part of this security measure, you are required to provide a verification code during the login
+              process. Please find your MFA code below:</p>
+
+            <p class='mfa-code'>MFA Code: {{mfaCode}}</p>
+
+            <p>Please follow the steps below to complete the login process:
+              <ol>
+                <li>Visit the AX Partner login page at {{loginUrl}}.</li>
+                <li>Enter your username and password as usual.</li>
+                <li>When prompted, enter the provided MFA code {{mfaCode}} in the designated field.</li>
+              </ol>
+            </p>
+
+            <p>Please note that the MFA code is time-sensitive and will expire after a certain period. If the code
+              expires, you can request a new one by clicking on the "Resend Code" option on the login page.</p>
+            <p>Thank you for your cooperation in keeping your AX Partner account secure.</p>
+          </div>
+
+          <p>
+            <div class='greeting'>Regards,</div>
+            AX Partners Digital Technology Team
+          </p>
+
+        </div>
+      </div>
+
+      <div class='copyright'>© AX Partner Corporation 2023</div>
+    </div>
+  </body>
+
+</html>
