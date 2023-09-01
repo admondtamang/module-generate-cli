@@ -1,6 +1,6 @@
-import { Attachment } from 'nodemailer/lib/mailer';
+import { Attachment } from "nodemailer/lib/mailer";
 
-export interface IEmailInterface {
+export type MailerParams = {
   from?: string;
   to: string | Array<string>;
   subject: string;
@@ -8,6 +8,6 @@ export interface IEmailInterface {
   attachments?: Attachment[];
   template?: EmailTemplate;
   html?: string;
-}
+};
 
-export type EmailTemplate = 'welcome' | 'mfa' | 'registration-invite' | 'forgot-password' | 'axp-user-notifications';
+export type EmailTemplate = "welcome" | "verify-email";
