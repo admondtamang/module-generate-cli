@@ -4,14 +4,15 @@ import nodemailer from "nodemailer";
 import handlebars from "handlebars";
 import * as aws from "@aws-sdk/client-ses";
 
+import config from "./email.env";
 import { MailerParams, EmailTemplate } from "./email.interface";
 
 const ses = new aws.SESClient({
   apiVersion: "2010-12-01",
-  region: process.env.AWS_REGION,
+  region: config.aws.region,
   credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID || "",
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || "",
+    accessKeyId: config.aws.accessKeyId,
+    secretAccessKey: config.aws.secretAccessKey,
   },
 });
 
@@ -20,7 +21,7 @@ const nodeMailerTransporter = nodemailer.createTransport({
 });
 
 export function sendMail(emailData: MailerParams) {
-  emailData.from = emailData.from || process.env.EMAIL_FROM;
+  emailData.from = emailData.from || config.email.from;
 
   // handlebars config
   if (emailData.template) {
