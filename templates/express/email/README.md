@@ -46,5 +46,5 @@ sendMail({
 
 
 ## Bugs
-- Ts do not read .hbs file so, for now, we have copy hbs file using copy-hbs package when building and starting the application. 
-- need to generate dynamic date i.e. @2023 copyright  
+[] Ts do not read .hbs file so, for now, we have copy hbs file using copy-hbs package when building and starting the application. 
+[] need to generate dynamic date i.e. @2023 copyright  
