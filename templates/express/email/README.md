@@ -30,3 +30,16 @@ sendMail({
   },
 });
 ```
+
+## Important Note
+- we have to copy hbs file as it won't happen during ts compilation step thus add this script on your `package.json`
+
+```json
+    "copy-hbs": "copyfiles -u 1 src/**/*.hbs dist"
+```
+
+- and modify your build script to
+
+```json
+    "build": "tsc && yarn copy-hbs",
+```
