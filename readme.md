@@ -7,10 +7,10 @@ Module Generate Cli (mgc)
 To generate a module
 
 ```
-mgc gen express/email
+npx mgc gen express/email
 ```
 
 ## Inspiration
 
-https://github.com/arminbro/generate-react-cli#openai-integration-alpha-release
-https://github.com/shadcn-ui
+- https://github.com/arminbro/generate-react-cli#openai-integration-alpha-release
+- https://github.com/shadcn-ui
