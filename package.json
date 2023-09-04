@@ -10,7 +10,7 @@
   },
   "repository": {
         "type": "git",
-        "url": "git@github.com:admondtamang/module-generate-cli"
+        "url": "git@github.com:admondtamang/module-generate-cli.git"
   },
   "publishConfig": {
     "access": "public"
