@@ -8,6 +8,10 @@
   "bin": {
     "cli": "bin/generate.js"
   },
+  "repository": {
+        "type": "git",
+        "url": "git@github.com:admondtamang/module-generate-cli"
+  },
   "publishConfig": {
     "access": "public"
   },
