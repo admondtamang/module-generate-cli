@@ -3,7 +3,7 @@
 import path from "path";
 import { program } from "commander";
 
-import { generateProject } from "../services/filecopy.service.js";
+import { generateModule } from "../services/filecopy.service.js";
 
 program
   .command("gen <modulePath>")
@@ -18,7 +18,7 @@ program
 
     const currentDir = path.join(process.cwd(), externalPath || "");
 
-    generateProject(modulePath, currentDir);
+    generateModule(modulePath, currentDir);
   });
 
 program.parse(process.argv);

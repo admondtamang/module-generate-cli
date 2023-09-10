@@ -39,13 +39,13 @@ export const getCurrentFolder = (name) => {
   else return name;
 };
 
-export const generateProject = (modulePath, toGeneratePath) => {
+export const generateModule = (modulePath, toGeneratePath) => {
   // to get __dirname
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = path.dirname(__filename);
 
   // copy template files and folders
-  const templatePath = path.join(__dirname, "../templates/" + modulePath);
+  const templatePath = path.join(__dirname, "../modules/" + modulePath);
 
   // generate module folder
   const moduleName = getCurrentFolder(modulePath);
@@ -58,5 +58,5 @@ export const generateProject = (modulePath, toGeneratePath) => {
   // copy module to your dir
   copyFolderSync(templatePath, newPathToGenerate);
 
-  console.log("Module generated successfully!");
+  console.log("Yeah!!! Module generated successfully!");
 };
