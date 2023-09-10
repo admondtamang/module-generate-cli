@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 import handlebars from "handlebars";
 import * as aws from "@aws-sdk/client-ses";
 
-import config from "./email.env";
+import config from "./email.config";
 import { MailerParams, EmailTemplate } from "./email.interface";
 
 const ses = new aws.SESClient({

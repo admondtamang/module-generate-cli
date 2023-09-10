@@ -9,8 +9,8 @@
     "cli": "bin/generate.js"
   },
   "repository": {
-        "type": "git",
-        "url": "git@github.com:admondtamang/module-generate-cli.git"
+    "type": "git",
+    "url": "git@github.com:admondtamang/module-generate-cli.git"
   },
   "publishConfig": {
     "access": "public"
