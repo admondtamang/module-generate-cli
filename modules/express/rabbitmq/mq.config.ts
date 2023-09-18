@@ -9,6 +9,6 @@ export const env = envSchema.parse(process.env);
 
 export default {
   rabbitmq: {
-    url: env.RABBITMQ_URL,
+    url: env.RABBITMQ_URL || "amqp://0.0.0.0:5672",
   },
 };
